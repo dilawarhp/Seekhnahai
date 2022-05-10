@@ -17,6 +17,7 @@ import Slider from "react-slick";
 import ContactUs from "../components/ContactUs";
 import Todo from "./Todo";
 
+
 function Home (){
    var settings = {
       dots: true,
