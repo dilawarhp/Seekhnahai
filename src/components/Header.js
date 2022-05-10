@@ -7,6 +7,7 @@ import Services from '../components/Services'
 import Departments from '../components/Departments'
 import Doctors from '../components/Doctors'
 import Contact from '../components/Contact'
+import Gallery from "../components/Gallery";
 function Header (){
     return <>
       <Router>
@@ -37,6 +38,9 @@ function Header (){
       <NavLink to="/Doctors" className="nav-link ">Doctors</NavLink>
       </li>
       <li className="nav-item">
+      <NavLink to="/Gallery" className="nav-link ">Gallery</NavLink>
+      </li>
+      <li className="nav-item">
       <NavLink to="/Contact" className="nav-link ">Contact</NavLink>
       </li>
     </ul>
@@ -51,6 +55,7 @@ function Header (){
       <Route exact path='/Services' element={< Services />}></Route>
       <Route exact path='/Departments' element={< Departments />}></Route>
       <Route exact path='/Doctors' element={< Doctors />}></Route>
+      <Route exact path='/Gallery' element={< Gallery />}></Route>
       <Route exact path='/Contact' element={< Contact />}></Route>
       </Routes> 
 </Router>
